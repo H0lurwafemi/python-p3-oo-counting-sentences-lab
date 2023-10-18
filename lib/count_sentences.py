@@ -12,28 +12,23 @@ class MyString:
 
 
 class MyString:
-    # ... (constructor)
-
     def is_sentence(self):
         return self.value.endswith(".")
 
 class MyString:
-    # ... (constructor)
     
     def is_question(self):
         return self.value.endswith("?")
 
 
 class MyString:
-    # ... (constructor)
-
+  
     def is_exclamation(self):
         return self.value.endswith("!")
 
 class MyString:
-    # ... (constructor)
 
     def count_sentences(self):
-        sentences = self.value.split(".")  # Split sentences by period
-        sentences = [sentence.strip() for sentence in sentences if sentence.strip()]  # Remove empty sentences
+        sentences = self.value.split(".")  
+        sentences = [sentence.strip() for sentence in sentences if sentence.strip()]  
         return len(sentences)
